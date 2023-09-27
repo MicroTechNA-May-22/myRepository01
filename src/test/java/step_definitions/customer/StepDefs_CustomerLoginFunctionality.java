@@ -47,6 +47,7 @@ public class StepDefs_CustomerLoginFunctionality extends Base{
 		String welcomeMsg =  getElementText(By.xpath("//h2[2]"));
 		assertEquals("Welcome David" , welcomeMsg);
 		 System.out.println("Code is Done");
+		System.out.println("Created new branch");
 	}
 
 }
