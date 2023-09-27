@@ -176,7 +176,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "step_definitions.customer.StepDefs_CustoemrOrder.i_logged_in_as_Customer_with_and(io.cucumber.datatable.DataTable)"
+  "location": "step_definitions.customer.StepDefs_CustomerOrder.i_logged_in_as_Customer_with_and(io.cucumber.datatable.DataTable)"
 });
 formatter.result({
   "status": "passed"
@@ -186,7 +186,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.match({
-  "location": "step_definitions.customer.StepDefs_CustoemrOrder.click_on_Order_List_Menu()"
+  "location": "step_definitions.customer.StepDefs_CustomerOrder.click_on_Order_List_Menu()"
 });
 formatter.result({
   "status": "passed"
@@ -196,7 +196,98 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "step_definitions.customer.StepDefs_CustoemrOrder.verify_Total_Order_count_is_greater_than(java.lang.Integer)"
+  "location": "step_definitions.customer.StepDefs_CustomerOrder.verify_Total_Order_count_is_greater_than(java.lang.Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.uri("file:src/test/resources/features/order/Feature_CreateOrder.feature");
+formatter.feature({
+  "name": "Create Order Opearations",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Create Order by Customer",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I logged in as Customer",
+  "rows": [
+    {},
+    {}
+  ],
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "step_definitions.customer.StepDefs_CustomerOrder.i_logged_in_as_Customer_with_and(io.cucumber.datatable.DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Order Product menu",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step_definitions.orders.StepDefs_CreateOrder.i_click_on_Order_Product_menu()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Select Product name",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step_definitions.orders.StepDefs_CreateOrder.select_Product_name()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Enter Order Date",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step_definitions.orders.StepDefs_CreateOrder.enter_Order_Date()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click Order Product button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step_definitions.orders.StepDefs_CreateOrder.click_Order_Product_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click Confirm Order",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "step_definitions.orders.StepDefs_CreateOrder.click_Confirm_Order()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify Order Status is Confirmed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "step_definitions.orders.StepDefs_CreateOrder.verify_Order_Status_is_Confirmed()"
 });
 formatter.result({
   "status": "passed"

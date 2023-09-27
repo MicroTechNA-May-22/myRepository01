@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-05-14T05:29:11.032Z",
+        "start_timestamp": "2023-07-18T23:09:29.531Z",
         "before": [
           {
             "result": {
-              "duration": 8021404600,
+              "duration": 4227895300,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 592658000,
+              "duration": 609769400,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 578667400,
+              "duration": 568778000,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 467733000,
+              "duration": 919511800,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 256852500,
+              "duration": 226916700,
               "status": "passed"
             },
             "line": 7,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 212876600,
+              "duration": 114550900,
               "status": "passed"
             },
             "line": 8,
@@ -89,7 +89,7 @@
           },
           {
             "result": {
-              "duration": 125928800,
+              "duration": 89103100,
               "status": "passed"
             },
             "line": 9,
@@ -107,7 +107,7 @@
           },
           {
             "result": {
-              "duration": 764562400,
+              "duration": 581278400,
               "status": "passed"
             },
             "line": 10,
@@ -119,7 +119,7 @@
           },
           {
             "result": {
-              "duration": 56967800,
+              "duration": 53247500,
               "status": "passed"
             },
             "line": 11,
@@ -148,14 +148,14 @@
     "tags": []
   },
   {
-    "line": 9,
+    "line": 8,
     "elements": [
       {
-        "start_timestamp": "2023-05-14T05:29:22.264Z",
+        "start_timestamp": "2023-07-18T23:09:37.038Z",
         "before": [
           {
             "result": {
-              "duration": 1847937500,
+              "duration": 1336903900,
               "status": "passed"
             },
             "match": {
@@ -163,14 +163,14 @@
             }
           }
         ],
-        "line": 14,
+        "line": 13,
         "name": "Customer Order total count Test",
         "description": "",
         "id": "customer-orders-functionality;customer-order-total-count-test",
         "after": [
           {
             "result": {
-              "duration": 526697200,
+              "duration": 621029200,
               "status": "passed"
             },
             "match": {
@@ -183,13 +183,13 @@
         "steps": [
           {
             "result": {
-              "duration": 2125783200,
+              "duration": 1892953500,
               "status": "passed"
             },
-            "line": 15,
+            "line": 14,
             "name": "I logged in as Customer",
             "match": {
-              "location": "step_definitions.customer.StepDefs_CustoemrOrder.i_logged_in_as_Customer_with_and(io.cucumber.datatable.DataTable)"
+              "location": "step_definitions.customer.StepDefs_CustomerOrder.i_logged_in_as_Customer_with_and(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
@@ -209,22 +209,22 @@
           },
           {
             "result": {
-              "duration": 431753000,
+              "duration": 547582700,
               "status": "passed"
             },
-            "line": 18,
+            "line": 17,
             "name": "Click on Order List Menu",
             "match": {
-              "location": "step_definitions.customer.StepDefs_CustoemrOrder.click_on_Order_List_Menu()"
+              "location": "step_definitions.customer.StepDefs_CustomerOrder.click_on_Order_List_Menu()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 83952400,
+              "duration": 204776400,
               "status": "passed"
             },
-            "line": 19,
+            "line": 18,
             "name": "Verify Total Order count is greater than 100",
             "match": {
               "arguments": [
@@ -233,7 +233,7 @@
                   "offset": 41
                 }
               ],
-              "location": "step_definitions.customer.StepDefs_CustoemrOrder.verify_Total_Order_count_is_greater_than(java.lang.Integer)"
+              "location": "step_definitions.customer.StepDefs_CustomerOrder.verify_Total_Order_count_is_greater_than(java.lang.Integer)"
             },
             "keyword": "And "
           }
@@ -245,6 +245,148 @@
     "id": "customer-orders-functionality",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/customer/Feaure_CustomerOrder.feature",
+    "tags": []
+  },
+  {
+    "line": 6,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-18T23:09:41.657Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1329136500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Create Order by Customer",
+        "description": "",
+        "id": "create-order-opearations;create-order-by-customer",
+        "after": [
+          {
+            "result": {
+              "duration": 653961000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1796918000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I logged in as Customer",
+            "match": {
+              "location": "step_definitions.customer.StepDefs_CustomerOrder.i_logged_in_as_Customer_with_and(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userId",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "david@gmail.com",
+                  "1234"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 441177300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I click on Order Product menu",
+            "match": {
+              "location": "step_definitions.orders.StepDefs_CreateOrder.i_click_on_Order_Product_menu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 172744400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Select Product name",
+            "match": {
+              "location": "step_definitions.orders.StepDefs_CreateOrder.select_Product_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 76466900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Enter Order Date",
+            "match": {
+              "location": "step_definitions.orders.StepDefs_CreateOrder.enter_Order_Date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 247661600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click Order Product button",
+            "match": {
+              "location": "step_definitions.orders.StepDefs_CreateOrder.click_Order_Product_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3821232300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click Confirm Order",
+            "match": {
+              "location": "step_definitions.orders.StepDefs_CreateOrder.click_Confirm_Order()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49009500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Verify Order Status is Confirmed",
+            "match": {
+              "location": "step_definitions.orders.StepDefs_CreateOrder.verify_Order_Status_is_Confirmed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create Order Opearations",
+    "description": "",
+    "id": "create-order-opearations",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/order/Feature_CreateOrder.feature",
     "tags": []
   }
 ]
