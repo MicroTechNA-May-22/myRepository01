@@ -22,6 +22,8 @@ public class StepDefs_CustomerLoginFunctionality extends Base{
 		click( Landing_Page.menuLogin );
 	}
 
+
+
 	@When("Click on Customer Login")
 	public void click_on_Customer_Login() {
 		click( CustomerLogin_Page.menuCustomerLogin );
