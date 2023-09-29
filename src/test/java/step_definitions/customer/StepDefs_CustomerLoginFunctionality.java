@@ -20,6 +20,7 @@ public class StepDefs_CustomerLoginFunctionality extends Base{
 	@When("I Click on Login menu")
 	public void i_Click_on_Login_menu() {
 		click( Landing_Page.menuLogin );
+		System.out.println("login menu");
 	}
 
 
@@ -48,7 +49,8 @@ public class StepDefs_CustomerLoginFunctionality extends Base{
 	public void verify_that_I_am_in_CUSTOMER_Home_Page() {
 		String welcomeMsg =  getElementText(By.xpath("//h2[2]"));
 		assertEquals("Welcome David" , welcomeMsg);
-		 System.out.println("code updated");
+		 System.out.println("Code is Done");
+		System.out.println("Created new branch");
 	}
 
 }
