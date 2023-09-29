@@ -7,5 +7,7 @@ public class New_Method {
         System.out.println("Hello world");
         System.out.println("I just modify some code");
         System.out.println("merge conflict resolve");
+System.out.println("merge conflict resolve by Fahmida");
+
     }
 }
