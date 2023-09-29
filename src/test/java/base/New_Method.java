@@ -7,6 +7,10 @@ public class New_Method {
         System.out.println("Hello world");
         System.out.println("Bangladesh is beautifull country");
         System.out.println("I like to enrolled for next session");
+        System.out.println("I just modify some code");
+        System.out.println("merge conflict resolve");
+        System.out.println("merge conflict resolve by Fahmida");
+
 
     }
 }
