@@ -9,5 +9,8 @@
         <module name="class43_SkyITSchool_FrameWork_with_PageObjectModel" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="class43_SkyITSchool_FrameWork_with_PageObjectModel" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
