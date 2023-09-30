@@ -9,5 +9,6 @@ public class New_Methods {
         System.out.println("I created page, stepdefs, featurefile. i also update pom.xml, i run the project by " +
                 "runner file and terminal, i check allure report " + "project is passed 100%");
 
+
     }
 }

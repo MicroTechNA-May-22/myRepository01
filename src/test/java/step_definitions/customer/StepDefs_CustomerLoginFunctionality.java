@@ -23,6 +23,8 @@ public class StepDefs_CustomerLoginFunctionality extends Base{
 		System.out.println("login menu");
 	}
 
+
+
 	@When("Click on Customer Login")
 	public void click_on_Customer_Login() {
 		click( CustomerLogin_Page.menuCustomerLogin );
