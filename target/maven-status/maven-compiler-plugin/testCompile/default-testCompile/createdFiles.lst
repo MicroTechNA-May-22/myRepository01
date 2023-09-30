@@ -1,9 +1,15 @@
 runner\Runner.class
 step_definitions\Hooks.class
 utils\ExcelReader.class
-step_definitions\StepDefs_CustoemrOrder.class
-step_definitions\StepDefs_CustomerLoginFunctionality.class
+step_definitions\orders\StepDefs_CreateOrder.class
+pages\MicrotechHomePage_Page.class
+pages\OrderList_Page.class
 base\Base.class
+base\New_Methods.class
 pages\CustomerLogin_Page.class
+step_definitions\customer\StepDefs_CustomerOrder.class
 pages\Landing_Page.class
+step_definitions\customer\StepDefs_MicrotechNa_HomePage_Verification.class
+pages\OrderProduct_Page.class
+step_definitions\customer\StepDefs_CustomerLoginFunctionality.class
 pages\CustomerHomePage_Page.class

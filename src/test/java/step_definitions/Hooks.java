@@ -6,6 +6,7 @@ import io.cucumber.java.Scenario;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,13 +48,13 @@ public class Hooks extends Base{
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.setHeadless(false);
+			chromeOptions.addArguments();
 			driver = new ChromeDriver(chromeOptions);
 			break;
 		case "firefox":
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.setHeadless(false);
+			firefoxOptions.addArguments();
 			driver = new FirefoxDriver(firefoxOptions);
 			break;
 		case "edge":
@@ -67,7 +68,7 @@ public class Hooks extends Base{
 		
 		int seconds = Integer.parseInt(config.getProperty("implisitWait"));
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(seconds , TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		System.out.println("before run");
 	}
 	
