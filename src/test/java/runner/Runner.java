@@ -6,7 +6,8 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src\\test\\resources\\features\\customer\\","src\\test\\resources\\features\\order\\"},	
+		features = {"src\\test\\resources\\features\\customer\\","src\\test\\resources\\features\\order\\"
+		,"src\\test\\resources\\features\\employee\\"},
 		glue = {"step_definitions"},
 		tags = {},
 		monochrome = true,
