@@ -4,14 +4,9 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.OutputType;
@@ -22,13 +17,10 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.ie.InternetExplorerOptions;
 
 import base.Base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.github.bonigarcia.wdm.config.Config;
 import utils.ExcelReader;
 
 public class Hooks extends Base{
@@ -39,8 +31,7 @@ public class Hooks extends Base{
 		config = new Properties();
 		fis = new FileInputStream( System.getProperty("user.dir") + "\\src\\test\\resources\\cofig\\config.properties");
 		config.load(fis);
-		
-		//initialize excel file
+
 		excelReader = new ExcelReader();
 		testData = excelReader.getData(System.getProperty("user.dir") + "\\src\\test\\resources\\testData\\loginData.xlsx", "loginTestData");
 		

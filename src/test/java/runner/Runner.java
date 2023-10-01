@@ -18,6 +18,4 @@ public class Runner {
 
 }
 
-//Test Automation Framework
-//with Cucumber BDD and Page Object Model
 

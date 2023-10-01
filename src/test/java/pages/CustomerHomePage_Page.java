@@ -11,8 +11,4 @@ public class CustomerHomePage_Page {
 	
 	public static By menuOrderProduct = By.linkText("Order Product");
 	
-	
-	
-	//Actions
-	
 }

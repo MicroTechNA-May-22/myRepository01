@@ -1,7 +1,7 @@
-#Author: David Spare
-#Feature: Customer Order
-#User Story: NGAS-523
-#Scenario: scenario 1 title
+Author: David Spare
+Feature: Customer Order
+User Story: NGAS-523
+Scenario: scenario 1 title
 
 Feature: Create Order Opearations
 
@@ -15,12 +15,3 @@ Feature: Create Order Opearations
 		And Click Order Product button
 		And Click Confirm Order
 		Then Verify Order Status is Confirmed
-
-
-
-
-#	And Click Confirm Order
-#	By.xpath("//tr")
-#			
-#	Then Verify Order Status is Confirmed
-#	By.xpath("//tr")		
