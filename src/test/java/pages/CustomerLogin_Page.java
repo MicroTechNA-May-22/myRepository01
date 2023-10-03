@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import base.Base;
 
 public class CustomerLogin_Page extends Base {
-	//Locators
 	public static By menuCustomerLogin = By.xpath("//a[@href='clogin.php']");
 	public static By textBoxUserId =  By.xpath("//input[@name='mailuid']");
 	public static By textBoxPassword =  By.xpath("//input[@name='pwd']");

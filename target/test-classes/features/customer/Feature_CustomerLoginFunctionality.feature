@@ -1,6 +1,6 @@
 Feature: Verify Customer Login functionality
 
-@Sanity @Regression
+@smoke
 Scenario Outline: Verify Customer Login functionality happy path
 Given I am in landing page http://it.microtechlimited.com
 When I Click on Login menu

@@ -1,10 +1,8 @@
-#Author: David Spare
-#Feature: Customer Order
-#User Story: NGAS-523
-#Scenario: scenario 1 title
+Feature: Customer Order
+Scenario: scenario 1 title
 
 Feature: Create Order Opearations
-
+@smoke
 	Scenario: Create Order by Customer
 		Given I logged in as Customer
     |userId         |password|
@@ -15,12 +13,3 @@ Feature: Create Order Opearations
 		And Click Order Product button
 		And Click Confirm Order
 		Then Verify Order Status is Confirmed
-
-
-
-
-#	And Click Confirm Order
-#	By.xpath("//tr")
-#			
-#	Then Verify Order Status is Confirmed
-#	By.xpath("//tr")		
