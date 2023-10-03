@@ -1,6 +1,4 @@
-Author: David Spare
 Feature: Customer Order
-User Story: NGAS-523
 Scenario: scenario 1 title
 
 Feature: Create Order Opearations

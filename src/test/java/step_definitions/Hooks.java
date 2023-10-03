@@ -5,28 +5,25 @@ import io.cucumber.java.Scenario;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-
 import base.Base;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import utils.ExcelReader;
 
 public class Hooks extends Base{
 	
 	@Before
-	public void setup() throws IOException, InvalidFormatException {
+	public void setup() throws IOException, InvalidFormatException, MalformedURLException {
 		
 		config = new Properties();
 		fis = new FileInputStream( System.getProperty("user.dir") + "\\src\\test\\resources\\cofig\\config.properties");
@@ -37,21 +34,17 @@ public class Hooks extends Base{
 		
 		switch (config.getProperty("browser")) {
 		case "chrome":
-			WebDriverManager.chromedriver().setup();
 			ChromeOptions chromeOptions = new ChromeOptions();
-			chromeOptions.addArguments();
-			driver = new ChromeDriver(chromeOptions);
+			driver = new RemoteWebDriver(new URL("http://3.145.197.131:4444"),chromeOptions);
 			break;
 		case "firefox":
-			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.addArguments();
-			driver = new FirefoxDriver(firefoxOptions);
+			driver = new RemoteWebDriver(new URL("http://3.145.197.131:4444"),firefoxOptions);
 			break;
 		case "edge":
-			WebDriverManager.edgedriver().setup();
+
 			EdgeOptions edgeOptions = new EdgeOptions();
-			driver = new EdgeDriver(edgeOptions);
+			driver = new RemoteWebDriver(new URL("http://3.145.197.131:4444"),edgeOptions);
 			break;
 		}
 		
@@ -81,6 +74,9 @@ public class Hooks extends Base{
 		}
 		
 		fis.close();
-		driver.quit();
+		if (driver != null){
+			driver.quit();
+		}
+
 	}
 }
