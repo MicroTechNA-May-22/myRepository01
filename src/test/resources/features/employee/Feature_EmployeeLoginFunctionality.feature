@@ -2,6 +2,7 @@ Feature: Employee Login Functionality
   As an employee
   I want to login my account
   So that i can verify this is employee login homepage
+  @smoke
   Scenario Outline:
     Given I am in landing page http://it.microtechlimited.com
     When I Click on Login menu

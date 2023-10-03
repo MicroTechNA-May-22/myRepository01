@@ -14,13 +14,12 @@ import utils.ExcelReader;
 
 public class Base {
 	
-	public static WebDriver driver; //default
+	public static WebDriver driver;
 	public static FileInputStream fis;
 	public static Properties config;
 	public static String host;
 	public static ExcelReader excelReader;
 	public static List<Map<String,String>> testData;
-	//public static WebDriver firefoxDriver; //default
 	
 	
 	public static void navigateURL(String url) {
@@ -41,9 +40,7 @@ public class Base {
 	}
 	
 	public static String getElementText(By locator) {
-		//Get the Text of that Element (H3) Online Access
 		WebElement element =  driver.findElement( locator );
-		//get the text of that element
 		String s = element.getText();	
 		return s;
 	}
