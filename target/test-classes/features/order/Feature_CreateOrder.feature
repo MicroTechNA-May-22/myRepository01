@@ -2,7 +2,7 @@ Feature: Customer Order
 Scenario: scenario 1 title
 
 Feature: Create Order Opearations
-
+@smoke
 	Scenario: Create Order by Customer
 		Given I logged in as Customer
     |userId         |password|
