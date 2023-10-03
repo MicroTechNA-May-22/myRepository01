@@ -56,6 +56,10 @@ public class Base {
 		dropDownWebElement = new Select( driver.findElement( locator ) );
 		dropDownWebElement.selectByVisibleText(textToSelect);
 	}
-	
+
+	public static String getText(By locator) {
+		String s = driver.findElement(locator).getText();
+		return s;
+	}
 	
 }
