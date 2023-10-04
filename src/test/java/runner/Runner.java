@@ -6,8 +6,8 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"src\\test\\resources\\features\\customer\\","src\\test\\resources\\features\\order\\"
-		,"src\\test\\resources\\features\\employee\\"},
+		features = {"src\\test\\resources\\features\\customer\\", "src\\test\\resources\\features\\order\\"
+		, "src\\test\\resources\\features\\employee\\"},
 		glue = {"step_definitions", "Hooks"},
 		tags = "@smoke",
 		plugin = {"pretty", "html:target/cucumber-reports"}
