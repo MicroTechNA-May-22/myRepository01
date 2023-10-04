@@ -1,8 +1,3 @@
-Feature: Customer Order
-Scenario: scenario 1 title
-Scenario: scenario 2 title
-Scenario: scenario 3 tile
-
 Feature: Customer orders functionality
   As a Customer
   I want to See my Orders

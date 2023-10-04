@@ -9,9 +9,11 @@ C:\GitHub\myRepository01\src\test\java\pages\MicrotechHomePage_Page.java
 C:\GitHub\myRepository01\src\test\java\pages\OrderProduct_Page.java
 C:\GitHub\myRepository01\src\test\java\utils\ExcelReader.java
 C:\GitHub\myRepository01\src\test\java\step_definitions\customer\StepDefs_CustomerOrder.java
+C:\GitHub\myRepository01\src\test\java\pages\EmployeeHompePage_Page.java
 C:\GitHub\myRepository01\src\test\java\step_definitions\Hooks.java
 C:\GitHub\myRepository01\src\test\java\step_definitions\orders\StepDefs_CreateOrder.java
 C:\GitHub\myRepository01\src\test\java\step_definitions\customer\StepDefs_CustomerLoginFunctionality.java
+C:\GitHub\myRepository01\src\test\java\step_definitions\employee\StepDefs_Employee_Login_Functionality.java
 C:\GitHub\myRepository01\src\test\java\base\gitMegreNew.java
 C:\GitHub\myRepository01\src\test\java\step_definitions\customer\StepDefs_MicrotechNa_HomePage_Verification.java
 C:\GitHub\myRepository01\src\test\java\base\New_Methods.java
