@@ -16,5 +16,11 @@ public class New_Method {
 
         System.out.println("New Branch created");
         System.out.println("featureFahmida is deleted");
+
+
+        System.out.println("Git conflict resolve");
+        System.out.println("Today's class will be about git conflict");
+
+
     }
 }
