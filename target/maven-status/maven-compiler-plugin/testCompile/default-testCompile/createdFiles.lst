@@ -1,6 +1,7 @@
 runner\Runner.class
 step_definitions\Hooks.class
 step_definitions\orders\StepDefs_CreateOrder.class
+step_definitions\employee\StepDefs_Employee_Login_Functionality.class
 base\gitMegreNew.class
 base\Base.class
 base\New_Methods.class
@@ -10,6 +11,7 @@ pages\OrderProduct_Page.class
 step_definitions\customer\StepDefs_CustomerLoginFunctionality.class
 pages\CustomerHomePage_Page.class
 utils\ExcelReader.class
+pages\EmployeeHompePage_Page.class
 base\AshitUpdate.class
 base\New_Method.class
 pages\MicrotechHomePage_Page.class
