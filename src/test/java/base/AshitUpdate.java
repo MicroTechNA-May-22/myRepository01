@@ -7,6 +7,8 @@ public class AshitUpdate {
         System.out.println ("I am cheking ***************************");
         System.out.println ("I am pushing my project in jenkins");
 
+        System.out.println ("I am  tyring to add new line$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
+
 
     }
 }
