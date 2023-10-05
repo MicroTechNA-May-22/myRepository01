@@ -16,7 +16,8 @@ public class New_Method {
         System.out.println("featureFahmida is deleted");
         System.out.println("Git conflict resolve");
         System.out.println("Today's class will be about git conflict");
-        System.out.println("heloooooooooo");
+        System.out.println("2nd conflict ");
+
 
 
     }
