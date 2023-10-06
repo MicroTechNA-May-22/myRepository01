@@ -11,6 +11,8 @@ public class AshitUpdate {
 
         System.out.println ("I add a new line branch");
 
+        System.out.println ("This is my line 1");
+
 
     }
 }
